@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ScrollerItemControl.h"
 #import "iCarousel.h"
+#import "UIPhoneBaseViewViewController.h"
 
-@interface HomeViewController : UIViewController<UIScrollViewDelegate,ProductScrollViewDelegate,iCarouselDataSource,iCarouselDelegate>
+@interface HomeViewController : UIPhoneBaseViewViewController<UIScrollViewDelegate,ProductScrollViewDelegate,iCarouselDataSource,iCarouselDelegate>
 @property (nonatomic,strong) ScrollerItemControl  *adScroller;
 @property (weak, nonatomic) IBOutlet UIPageControl *adPageControl;
 @property (strong, nonatomic) IBOutlet UIView *adScrollView;

@@ -61,27 +61,6 @@ typedef enum ScrollDirection {
                 UIImageView   *imageViewForDifferentColors1=[[UIImageView alloc]initWithFrame:CGRectMake(padding,padding,(imgSize.width-2*padding),imgSize.height)];
                 CGRect frame1 = imageViewForDifferentColors1.frame;
                 imageViewForDifferentColors1.tag = (iCount+1000);
-                if (iCount==0) {
-                    [controlViewForSimilarProducts setBackgroundColor:[UIColor redColor]];
-                    [imageViewForDifferentColors1 setBackgroundColor:[UIColor blackColor]];
-                }
-                else if(iCount==1) {
-                    [controlViewForSimilarProducts setBackgroundColor:[UIColor purpleColor]];
-                    [imageViewForDifferentColors1 setBackgroundColor:[UIColor blackColor]];
-                }
-                else if(iCount==2) {
-                    [controlViewForSimilarProducts setBackgroundColor:[UIColor blackColor]];
-                    [imageViewForDifferentColors1 setBackgroundColor:[UIColor purpleColor]];
-                }
-                else if(iCount==3) {
-                    [controlViewForSimilarProducts setBackgroundColor:[UIColor blueColor]];
-                    [imageViewForDifferentColors1 setBackgroundColor:[UIColor greenColor]];
-                }
-                else if(iCount==4) {
-                    [controlViewForSimilarProducts setBackgroundColor:[UIColor greenColor]];
-                    [imageViewForDifferentColors1 setBackgroundColor:[UIColor blackColor]];
-                }
-                
                 //Setting the dummy image and loading the images asynchronously using ASIHTTP
              [imageViewForDifferentColors1 setImage:[UIImage imageNamed:@"home.png"]];
                 activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];

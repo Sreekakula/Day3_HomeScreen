@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3427B7371B51012100DDA1C5 /* UIPhoneBaseViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3427B7361B51012100DDA1C5 /* UIPhoneBaseViewViewController.m */; };
+		3427B73C1B529F4B00DDA1C5 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 3427B7391B529F4B00DDA1C5 /* Search.png */; };
+		3427B73D1B529F4B00DDA1C5 /* Search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3427B73A1B529F4B00DDA1C5 /* Search@2x.png */; };
+		3427B73E1B529F4B00DDA1C5 /* Search@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3427B73B1B529F4B00DDA1C5 /* Search@3x.png */; };
 		34EBE7091B4CBC2600F334DC /* ScrollerItemControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EBE7081B4CBC2600F334DC /* ScrollerItemControl.m */; };
 		34EBE70C1B4CBE4400F334DC /* ULPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EBE70B1B4CBE4400F334DC /* ULPageControl.m */; };
 		34EBE70F1B4CBF2800F334DC /* ULSlideDetailsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EBE70E1B4CBF2800F334DC /* ULSlideDetailsObject.m */; };
@@ -31,7 +35,6 @@
 		7F0F3CD21B4BD62F00A42FB0 /* SampleCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0F3CD11B4BD62F00A42FB0 /* SampleCodeTests.m */; };
 		7F5D425C1B4E517100BFB0DF /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5D425B1B4E517100BFB0DF /* iCarousel.m */; };
 		7F5D425E1B4E589700BFB0DF /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F5D425D1B4E589700BFB0DF /* page.png */; };
-		7F5D42661B4E5D4500BFB0DF /* Lake in Resources */ = {isa = PBXBuildFile; fileRef = 7F5D42651B4E5D4500BFB0DF /* Lake */; };
 		7FBAA6CD1B4BDD68002FC24F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBAA6CC1B4BDD68002FC24F /* ViewController.m */; };
 		7FBAA6D41B4BDD8B002FC24F /* cartImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBAA6CF1B4BDD8B002FC24F /* cartImage.png */; };
 		7FBAA6D51B4BDD8B002FC24F /* favourite.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBAA6D01B4BDD8B002FC24F /* favourite.png */; };
@@ -55,6 +58,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3427B7351B51012100DDA1C5 /* UIPhoneBaseViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIPhoneBaseViewViewController.h; path = Classes/UIPhoneBaseViewViewController.h; sourceTree = "<group>"; };
+		3427B7361B51012100DDA1C5 /* UIPhoneBaseViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIPhoneBaseViewViewController.m; path = Classes/UIPhoneBaseViewViewController.m; sourceTree = "<group>"; };
+		3427B7391B529F4B00DDA1C5 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Search.png; path = Images/Search.png; sourceTree = "<group>"; };
+		3427B73A1B529F4B00DDA1C5 /* Search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Search@2x.png"; path = "Images/Search@2x.png"; sourceTree = "<group>"; };
+		3427B73B1B529F4B00DDA1C5 /* Search@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Search@3x.png"; path = "Images/Search@3x.png"; sourceTree = "<group>"; };
 		34EBE7071B4CBC2600F334DC /* ScrollerItemControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScrollerItemControl.h; path = Utilities/ScrollerItemControl.h; sourceTree = "<group>"; };
 		34EBE7081B4CBC2600F334DC /* ScrollerItemControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScrollerItemControl.m; path = Utilities/ScrollerItemControl.m; sourceTree = "<group>"; };
 		34EBE70A1B4CBE4400F334DC /* ULPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ULPageControl.h; path = Utilities/ULPageControl.h; sourceTree = "<group>"; };
@@ -89,7 +97,6 @@
 		7F5D425A1B4E517100BFB0DF /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = Utilities/iCarousel.h; sourceTree = "<group>"; };
 		7F5D425B1B4E517100BFB0DF /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = Utilities/iCarousel.m; sourceTree = "<group>"; };
 		7F5D425D1B4E589700BFB0DF /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page.png; path = Images/page.png; sourceTree = "<group>"; };
-		7F5D42651B4E5D4500BFB0DF /* Lake */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lake; sourceTree = "<group>"; };
 		7FBAA6CB1B4BDD68002FC24F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Classes/ViewController.h; sourceTree = "<group>"; };
 		7FBAA6CC1B4BDD68002FC24F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Classes/ViewController.m; sourceTree = "<group>"; };
 		7FBAA6CF1B4BDD8B002FC24F /* cartImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cartImage.png; path = Images/cartImage.png; sourceTree = "<group>"; };
@@ -125,6 +132,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3427B7381B51014D00DDA1C5 /* Base View */ = {
+			isa = PBXGroup;
+			children = (
+				3427B7351B51012100DDA1C5 /* UIPhoneBaseViewViewController.h */,
+				3427B7361B51012100DDA1C5 /* UIPhoneBaseViewViewController.m */,
+			);
+			name = "Base View";
+			sourceTree = "<group>";
+		};
 		34EBE7061B4CBC0600F334DC /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +213,6 @@
 		7F0F3CA91B4BD62F00A42FB0 = {
 			isa = PBXGroup;
 			children = (
-				7F5D42651B4E5D4500BFB0DF /* Lake */,
 				7F0F3CB41B4BD62F00A42FB0 /* SampleCode */,
 				7F0F3CCE1B4BD62F00A42FB0 /* SampleCodeTests */,
 				7F0F3CB31B4BD62F00A42FB0 /* Products */,
@@ -258,6 +273,9 @@
 		7FBAA6CE1B4BDD72002FC24F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3427B7391B529F4B00DDA1C5 /* Search.png */,
+				3427B73A1B529F4B00DDA1C5 /* Search@2x.png */,
+				3427B73B1B529F4B00DDA1C5 /* Search@3x.png */,
 				7F5D425D1B4E589700BFB0DF /* page.png */,
 				7F05C4611B4CEFC900385600 /* Vertical_Divider.png */,
 				7F05C4621B4CEFC900385600 /* Vertical_Divider@2x.png */,
@@ -283,6 +301,7 @@
 		7FBAA6D91B4BDD90002FC24F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3427B7381B51014D00DDA1C5 /* Base View */,
 				34EBE7131B4CC21800F334DC /* Products Tab */,
 				34EBE7121B4CC20A00F334DC /* Cart Tab */,
 				34EBE7111B4CC1F900F334DC /* WishlistTab */,
@@ -381,18 +400,20 @@
 				7F0F3CC61B4BD62F00A42FB0 /* LaunchScreen.xib in Resources */,
 				7F05C4601B4CE9E700385600 /* rating-star-f@2x.png in Resources */,
 				7F05C4631B4CEFC900385600 /* Vertical_Divider.png in Resources */,
+				3427B73D1B529F4B00DDA1C5 /* Search@2x.png in Resources */,
 				7F05C4641B4CEFC900385600 /* Vertical_Divider@2x.png in Resources */,
 				7F05C4571B4CE8F700385600 /* Tab_Bar_Bg.png in Resources */,
 				7F05C4591B4CE8F700385600 /* Tab_basket_icon.png in Resources */,
-				7F5D42661B4E5D4500BFB0DF /* Lake in Resources */,
 				7F5D425E1B4E589700BFB0DF /* page.png in Resources */,
 				7F05C45C1B4CE8F700385600 /* Tab_home_icon@2x.png in Resources */,
 				7FBAA6D71B4BDD8B002FC24F /* myaccount.jpg in Resources */,
 				7F05C45A1B4CE8F700385600 /* Tab_basket_icon@2x.png in Resources */,
 				7FBAA6D51B4BDD8B002FC24F /* favourite.png in Resources */,
+				3427B73E1B529F4B00DDA1C5 /* Search@3x.png in Resources */,
 				7F05C4581B4CE8F700385600 /* Tab_Bar_Bg@2x.png in Resources */,
 				7F05C45B1B4CE8F700385600 /* Tab_home_icon.png in Resources */,
 				7F0F3CC31B4BD62F00A42FB0 /* Images.xcassets in Resources */,
+				3427B73C1B529F4B00DDA1C5 /* Search.png in Resources */,
 				7F05C45F1B4CE9E700385600 /* rating-star-f.png in Resources */,
 				7FBAA6D81B4BDD8B002FC24F /* search.jpg in Resources */,
 			);
@@ -415,6 +436,7 @@
 				7FBAA6DF1B4BE091002FC24F /* ProductsViewController.m in Sources */,
 				34EBE70C1B4CBE4400F334DC /* ULPageControl.m in Sources */,
 				7FBAA6E21B4BE0C8002FC24F /* WishListViewController.m in Sources */,
+				3427B7371B51012100DDA1C5 /* UIPhoneBaseViewViewController.m in Sources */,
 				7FBAA6CD1B4BDD68002FC24F /* ViewController.m in Sources */,
 				7F0F3CBB1B4BD62F00A42FB0 /* AppDelegate.m in Sources */,
 				7F0F3CB81B4BD62F00A42FB0 /* main.m in Sources */,

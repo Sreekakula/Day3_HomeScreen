@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uBt-ZD-IQL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uBt-ZD-IQL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -14,43 +14,53 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MR7-jE-Plc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="237"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MR7-jE-Plc">
+                                <rect key="frame" x="0.0" y="56" width="320" height="195"/>
                                 <subviews>
                                     <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UcL-AA-a11" customClass="ULPageControl">
-                                        <rect key="frame" x="185" y="200" width="39" height="37"/>
+                                        <rect key="frame" x="150" y="150" width="39" height="0.0"/>
                                     </pageControl>
                                 </subviews>
-                                <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kpy-GP-K3U">
-                                <rect key="frame" x="0.0" y="241" width="600" height="2"/>
-                                <color key="backgroundColor" red="0.69019609689999994" green="0.71372550729999995" blue="0.73333334920000004" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H5h-0Q-4WT" customClass="iCarousel">
-                                <rect key="frame" x="0.0" y="274" width="606" height="230"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="272" width="320" height="237"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="CAS-fM-tUS"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="yt8-ff-88q"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Dze-sB-wuw"/>
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Special Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYx-dx-VKS">
-                                <rect key="frame" x="169" y="245" width="247" height="21"/>
+                                <rect key="frame" x="0.0" y="243" width="320" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="T4R-aE-E9g"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.99911221590909094" green="0.99911221590909094" blue="0.99911221590909094" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="H5h-0Q-4WT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="6hj-A5-uZB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="H5h-0Q-4WT" secondAttribute="trailing" constant="-22" id="Onc-8d-amp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="mYx-dx-VKS" secondAttribute="trailing" constant="168" id="UKT-R4-5d1"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="H5h-0Q-4WT" secondAttribute="bottom" constant="2" id="XOG-cT-hdP"/>
+                            <constraint firstItem="mYx-dx-VKS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="9Ut-4q-JaG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mYx-dx-VKS" secondAttribute="trailing" constant="-16" id="KIw-GZ-w5v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MR7-jE-Plc" secondAttribute="trailing" constant="-16" id="M4f-e1-K5W"/>
+                            <constraint firstItem="H5h-0Q-4WT" firstAttribute="top" secondItem="mYx-dx-VKS" secondAttribute="bottom" constant="5" id="Myl-s2-m0k"/>
+                            <constraint firstItem="H5h-0Q-4WT" firstAttribute="top" secondItem="mYx-dx-VKS" secondAttribute="bottom" constant="5" id="OPQ-cr-rIL"/>
+                            <constraint firstItem="H5h-0Q-4WT" firstAttribute="top" secondItem="MR7-jE-Plc" secondAttribute="bottom" constant="21" id="Qa2-qH-YMo"/>
+                            <constraint firstItem="MR7-jE-Plc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="cci-sU-Ge6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mYx-dx-VKS" secondAttribute="trailing" constant="-16" id="gYb-nt-g6T"/>
+                            <constraint firstItem="mYx-dx-VKS" firstAttribute="top" secondItem="MR7-jE-Plc" secondAttribute="bottom" constant="-8" id="jRM-st-MDO"/>
+                            <constraint firstItem="MR7-jE-Plc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-8" id="unG-b8-TIQ"/>
+                            <constraint firstItem="mYx-dx-VKS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-8" id="z3U-Ax-P6z"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Dwi-il-y6x"/>
@@ -62,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="-526"/>
+            <point key="canvasLocation" x="956" y="-498"/>
         </scene>
         <!--Products View Controller-->
         <scene sceneID="d5E-Sp-ydI">
@@ -73,7 +83,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9V2-SR-m1b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mpe-1v-ojN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRODUCTS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luQ-VB-Oec">
@@ -89,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNb-Vz-ofJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="349"/>
+            <point key="canvasLocation" x="956.26666666666665" y="330.38666666666666"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="swO-Fp-0uF">
@@ -100,7 +110,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3pv-om-hEp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5Jz-Vm-4Em">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wishlist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgE-NR-YLn">
@@ -116,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Pv-sM-FX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="1965"/>
+            <point key="canvasLocation" x="956.26666666666665" y="1860.2"/>
         </scene>
         <!--Wishlist View Controller-->
         <scene sceneID="WKr-dB-ae4">
@@ -127,7 +137,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Ove-9W-m4n"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rvH-j1-JkQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="art" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfO-06-D10">
@@ -143,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrs-oh-2Y7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1799" y="2729"/>
+            <point key="canvasLocation" x="959.4666666666667" y="2583.4533333333334"/>
         </scene>
         <!--MyCart View Controller-->
         <scene sceneID="m8x-1Q-gVS">
@@ -154,7 +164,7 @@
                         <viewControllerLayoutGuide type="bottom" id="sRK-mF-4Ic"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Tzs-rh-1Qz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z5-6d-K0i">
@@ -170,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u61-gy-XDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="1149"/>
+            <point key="canvasLocation" x="956.26666666666665" y="1087.72"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ekp-QV-KPS">
@@ -193,7 +203,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDC-dd-8Y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229" y="-515"/>
+            <point key="canvasLocation" x="122.13333333333333" y="-487.5333333333333"/>
         </scene>
         <!--Home-->
         <scene sceneID="H3k-rx-Ydj">
@@ -212,7 +222,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZw-hf-uuq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941" y="-515"/>
+            <point key="canvasLocation" x="501.86666666666667" y="-487.5333333333333"/>
         </scene>
         <!--Products-->
         <scene sceneID="yde-po-i8C">
@@ -231,7 +241,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24l-Yk-FPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959" y="309"/>
+            <point key="canvasLocation" x="511.46666666666664" y="292.51999999999998"/>
         </scene>
         <!--Camera-->
         <scene sceneID="TYR-QU-dYT">
@@ -250,7 +260,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jcq-Ht-eho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947" y="1157"/>
+            <point key="canvasLocation" x="505.06666666666666" y="1095.2933333333333"/>
         </scene>
         <!--Wishlist-->
         <scene sceneID="MjF-xI-DsB">
@@ -269,7 +279,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUy-f9-td1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="959" y="1981"/>
+            <point key="canvasLocation" x="511.46666666666664" y="1875.3466666666666"/>
         </scene>
         <!--My Cart-->
         <scene sceneID="clq-tM-NZX">
@@ -288,7 +298,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VgW-6i-Y4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971" y="2745"/>
+            <point key="canvasLocation" x="517.86666666666667" y="2598.5999999999999"/>
         </scene>
     </scenes>
     <resources>
@@ -299,4 +309,9 @@
         <image name="rating-star-f.png" width="48" height="46"/>
         <image name="search.jpg" width="30" height="30"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

@@ -97,11 +97,12 @@
     [self.adScroller scrollViewforFrame:CGRectMake(0, 0, imageViewFrame.width, imageViewFrame.height
                                                    ) withObjects:promoProductsArray withImageSize:CGSizeMake(imageViewFrame.width, imageViewFrame.height) forType:ULHorizontalScrollViewTypeAdControl withOffset:0 withSpacingBetweenObjects:0];
 //
-    self.adPageControl.frame = CGRectMake(150, 193, 54, 40);
+    
     
     promotionsTimer =[NSTimer scheduledTimerWithTimeInterval:SLIDES_TIMER target:self selector:@selector(setAdScrollPositionWithTime:) userInfo:nil repeats:YES];
     self.adScroller.scrollViewDelegate = self;
     [self.adScrollView addSubview:_adScroller];
+    CGRect frame1 = self.adScroller.frame;
     [self.adScrollView bringSubviewToFront:_adScroller];
     [self.adScrollView addSubview:self.adPageControl];
 }
